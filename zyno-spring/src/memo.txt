@@ -1,0 +1,26 @@
+스프링 부트 시작
+https://start.spring.io/
+
+Maven -> 요즘 잘 안씀
+Gradle -> 요즘 많이 씀
+
+스프링 부트 라이브러리
+Spring-boot-starter-web
+starter-tomcat : 웹서버
+webmvc 스프링 웹 mvc
+Thyme leaf 템플릿 엔진 (View)
+starter (부트 + 코어 + 로깅)
+boot
+Core
+spring-boot-starter-logging
+logback, slf4j
+
+테스트 라이브러리
+Spring-boot-starter-test
+Unit : 테스트 프레임워크
+mockito : mock 라이브러리
+assertj : 테스트 코드 작성을 편하게 도와주는 라이브러리
+Spring test : 스프링 통합 테스트 지원
+
+// 정적 타입 파일 (html) => resource.static 에서 작성
+
