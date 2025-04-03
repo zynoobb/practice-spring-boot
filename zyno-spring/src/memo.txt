@@ -24,3 +24,10 @@ Spring test : 스프링 통합 테스트 지원
 
 // 정적 타입 파일 (html) => resource.static 에서 작성
 
+// 빌드하고 실행하기
+./gradlew build
+cd build/libs
+ls -arlth
+java -jar hello-spring-0.0.1-snapshot.jar
+
+// MVC (Model, View, Controller)
