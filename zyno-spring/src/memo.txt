@@ -31,3 +31,14 @@ ls -arlth
 java -jar hello-spring-0.0.1-snapshot.jar
 
 // MVC (Model, View, Controller)
+
+// java nest.js 대조
+package | module
+userService.java | user.service.ts
+User.java | user.interface.ts
+
+// 단축어
+리펙토링 관련 => ctrl + T
+테스트 코드 => cmd + shift + T
+변수 추출 => cmd + opt + V
+이전에 실행한 것 다시 실행 => ctrl + R
