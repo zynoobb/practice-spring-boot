@@ -1,9 +1,11 @@
 package zyno.zyno_spring.repository;
 
+import org.springframework.stereotype.Repository;
 import zyno.zyno_spring.domain.Member;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;

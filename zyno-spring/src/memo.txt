@@ -42,3 +42,5 @@ User.java | user.interface.ts
 테스트 코드 => cmd + shift + T
 변수 추출 => cmd + opt + V
 이전에 실행한 것 다시 실행 => ctrl + R
+
+@AutoWired => 필요한 객체(빈)를 스프링 컨테이너에서 찾아서 자동으로 주입
