@@ -1,5 +1,8 @@
 package zyno.zyno_spring.domain;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Member {
     private Long id;
     private String name;
