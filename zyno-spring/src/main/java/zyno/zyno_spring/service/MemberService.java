@@ -1,5 +1,6 @@
 package zyno.zyno_spring.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import zyno.zyno_spring.domain.Member;
@@ -9,6 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
