@@ -3,7 +3,7 @@ FROM gradle:8.6-jdk17
 WORKDIR /app
 COPY . .
 RUN gradle build -x test
-CMD ["gradle", "bootRun"]
+CMD ["gradle", "bootRun", "--continuous"]
 
 # Runtime stage
 FROM eclipse-temurin:17-jre
