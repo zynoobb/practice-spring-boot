@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <!-- 애플리케이션 로그 -->
+    <logger name="zyno.zyno_spring" level="DEBUG"/>
+
+    <!-- Spring 프레임워크 로그 -->
+    <logger name="org.springframework" level="INFO"/>
+
+    <!-- Hibernate 로그 -->
+    <logger name="org.hibernate" level="INFO"/>
+
+    <!-- SQL 로그 -->
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+    <logger name="org.hibernate.type.descriptor.sql" level="TRACE"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
