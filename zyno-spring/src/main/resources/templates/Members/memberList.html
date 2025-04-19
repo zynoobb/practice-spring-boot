@@ -1,23 +1,25 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<body>
-<div class="container">
-    <div>
+    <head>
+        <meta charset="UTF-8" />
+        <title>회원 목록</title>
+    </head>
+    <body>
+        <h1>회원 목록</h1>
         <table>
             <thead>
-            <tr>
-                <th>#</th>
-                <th>이름</th>
-            </tr>
+                <tr>
+                    <th>#</th>
+                    <th>이름</th>
+                </tr>
             </thead>
             <tbody>
-            <tr th:each="member : ${members}">
-                <td th:text="${member.id}"></td>
-                <td th:text="${member.name}"></td>
-            </tr>
+                <tr th:each="member : ${members}">
+                    <td th:text="${member.id}"></td>
+                    <td th:text="${member.name}"></td>
+                </tr>
             </tbody>
         </table>
-    </div>
-</div> <!-- /container -->
-</body>
+        <a href="/">홈으로</a>
+    </body>
 </html>

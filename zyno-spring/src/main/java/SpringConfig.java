@@ -18,6 +18,11 @@ public class SpringConfig {
   }
 
   // @Bean
+  // public TimeTraceAop timeTraceAop() {
+  // return new TimeTraceAop();
+  // }
+
+  // @Bean
   // private MemberRepository memberRepository() {
   // // return new JdbcTemplateMemberRepository(dataSource);
   // return new JpaMemberRepository(em);

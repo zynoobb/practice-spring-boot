@@ -1,19 +1,21 @@
 version: '3.8'
 services:
     app:
-        container_name: zynodb
+        container_name: zyno-spring-app
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: Dockerfile.dev
         ports:
             - "8080:8080"
         environment:
-            SPRING_PROFILES_ACTIVE: prod
+            SPRING_PROFILES_ACTIVE: dev
             SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/zynodb
             SPRING_DATASOURCE_USERNAME: root
             SPRING_DATASOURCE_PASSWORD: root
         volumes:
             - .:/app
+            - ~/.m2:/root/.m2
+            - ~/.gradle:/root/.gradle
         depends_on:
             db:
                 condition: service_healthy

@@ -1,7 +1,7 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.4.4'
-    id 'io.spring.dependency-management' version '1.1.7'
+    id 'org.springframework.boot' version '3.2.4'
+    id 'io.spring.dependency-management' version '1.1.4'
 }
 
 group = 'zyno'
@@ -21,15 +21,24 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
     runtimeOnly 'mysql:mysql-connector-java:8.0.33'
     testImplementation 'com.h2database:h2'
-
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+// 리소스 파일이 JAR에 포함되도록 설정
+processResources {
+    duplicatesStrategy = 'include'
+}
+
+bootJar {
+    duplicatesStrategy = 'include'
 }
